@@ -10,7 +10,7 @@ python app.py
 ```
 
 ## Description
-
+deployed on heroku
 
 ## Implementation
 this is a proyect implemented using Flask, and is a Rest API for a store (not a real one)
