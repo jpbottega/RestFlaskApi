@@ -13,12 +13,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'pato'
 api = Api(app)
 
-
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
-
 jwt = JWT(app, authentication_handler=authenticate, identity_handler=identity)
 
 # Recursos
